@@ -1,6 +1,6 @@
 slowMath
     // Add together 6 and 2.
-    .add(1, 1).then(num => {
+    .add(6, 2).then(num => {
         console.log(num);
         return slowMath.multiply(num, 2)
     // Wait on the result, log it, and then multiply the result by 2.
@@ -34,10 +34,8 @@ slowMath
     // Wait on the result, log it, and then add 32 to the result.
     }).then(num => {
         console.log(`The final result is ${num}.`)
-    // Wait on the result, and then log: The final result is ___, where you fill in the blank with the final result.
+    // Add a .catch function to handle any errors that occur. Log the error to the console.
     }).catch(err => {
         console.log(err);
     });
 
-
-// Add a .catch function to handle any errors that occur. Log the error to the console.
